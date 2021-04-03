@@ -79,25 +79,24 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+-Jump Box 10.0.0.4
+-Web-1  10.0.0.5
+-Web-2  10.0.0.6
+-Web-3  10.0.0.7
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+-filebeat-7.6.1-amd64.deb
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+-Filebeat is used to send your log files to kibana. Filebeat monitors and collects log events on specificed servers.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the Filebeat-configuration.yml file to ELK VM.
+- Update the hosts file to include 10.0.0.4, 10.0.0.5, 10.0.0.6, 10.0.0.7
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+ansible-playbook filebeat-playbook.yml
+<img width="796" alt="Screen Shot 2021-04-03 at 9 19 29 AM" src="https://user-images.githubusercontent.com/81786950/113484643-45928900-945e-11eb-8edd-eb280e4399a3.png">
