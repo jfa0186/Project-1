@@ -75,7 +75,7 @@ Download and launch a docker elk container - starts docker and establishes the p
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+<img width="588" alt="Docker ps ELK" src="https://user-images.githubusercontent.com/81786950/113483769-f8141d00-9459-11eb-9679-71d46a03b740.png">
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
