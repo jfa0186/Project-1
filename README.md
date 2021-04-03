@@ -4,7 +4,7 @@ Week 13 Project
 
 The files in this repository were used to configure the network depicted below.
 
-!Diagam/Week12Diagram.png
+<img width="1307" alt="Week 12 Diagram" src="https://user-images.githubusercontent.com/81786950/113483813-2abe1580-945a-11eb-8dff-124b720af353.png">
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
